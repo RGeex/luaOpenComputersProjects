@@ -32,10 +32,9 @@ while true do
         x = x + 1
 
         if label(ic.getStackInInternalSlot(1)) then
-            if ic.equip()
-                x = 0
-                print('back in business')
-            end
+            x = 0
+            ic.equip()
+            print('back in business')
         else
             robot.dropDown()
             ic.suckFromSlot(0, 9)
